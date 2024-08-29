@@ -31,7 +31,7 @@ class DownloadRepositoryImpl(
                 .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, newFileName)
 
             val downloadManager =
-                context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+                context.getSystemService(DOWNLOAD_SERVICE) as DownloadManager
             downloadManager.enqueue(request)
         }
         Toast.makeText(context, "Download Started", Toast.LENGTH_SHORT).show()
