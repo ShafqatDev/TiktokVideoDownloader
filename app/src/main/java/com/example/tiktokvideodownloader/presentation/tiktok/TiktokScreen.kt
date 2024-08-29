@@ -58,7 +58,7 @@ fun TiktokScreen() {
     ) {
         Text(
             text = "TikTok Video Downloader",
-            style = MaterialTheme.typography.headlineMedium.copy(
+            style = MaterialTheme.typography.headlineSmall.copy(
                 fontWeight = FontWeight.Bold, color = Color(0xFF333333)
             ),
             modifier = Modifier.padding(top = 24.dp, bottom = 16.dp),
