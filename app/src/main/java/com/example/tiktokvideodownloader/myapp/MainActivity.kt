@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.CompositionLocalProvider
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
                         Navigation(navController = navController)
                     }else{
                         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
-                            IconButton(onClick = {
+                            Button(onClick = {
                                 permission.launchMultiplePermissionRequest()
                             }) {
                                 Text(text = "Allow Permissions")
